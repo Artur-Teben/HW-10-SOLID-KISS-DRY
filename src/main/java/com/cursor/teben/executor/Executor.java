@@ -1,7 +1,6 @@
 package com.cursor.teben.executor;
 
 import com.cursor.teben.patterns.builder.Movie;
-import com.cursor.teben.patterns.builder.MovieBuilder;
 import com.cursor.teben.patterns.builder.MovieGenre;
 import com.cursor.teben.patterns.singleton.SingletonExample;
 
@@ -12,7 +11,7 @@ import java.util.List;
 
 public class Executor {
     public void run() {
-        Movie movie = new MovieBuilder()
+        Movie movie = new Movie.Builder()
                 .buildName("Jurassic park")
                 .buildGenre(List.of(MovieGenre.ADVENTURE, MovieGenre.FANTASY))
                 .buildCountry("United States")
